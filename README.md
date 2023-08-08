@@ -17,8 +17,22 @@ medias_por_filme = notas.groupby('filmeId').mean().nota
 ```
 ![image](https://github.com/KelsonHenrique/movie-project/assets/141082201/4b664872-8f8c-47ed-8aa9-28610196be15)
 
+Lançou-se mão do uso da <a href="https://seaborn.pydata.org/" target="_blank"> Biblioteca Seaborn </a> para a visualização da variável categórica "original_language" no intuito comparar o uso dos idiomas, excluindo o inglês que foram mais utilizados pelos filmes.
+```
+total_de_outras_linguas = tmdb.query("original_language != 'en'").original_language.value_counts()
+filmes_nao_ingles = tmdb.query("original_language !='en'")
+plt.figure(figsize=(5,13))
+sns.catplot(x='original_language',kind = 'count',data = filmes_nao_ingles)
+```
+Obtemos o seguinte gráfico:
+![image](https://github.com/KelsonHenrique/movie-project/assets/141082201/f074a208-29eb-45e3-bce3-cc07adafd941)
 
-Gráfico elaborado usando a biblioteca do python usando uma base de dados de
+Para ter uma melhor ideia sobre os níveis entre os idiomas, foi feito um tratamento gráfico que representa de uma maneira mais inteligível esse ordenamento
+
+```
+sns.catplot(x='original_language',kind = 'count',data = filmes_nao_ingles,aspect = 2,palette = 'mako',order = total_de_outras_linguas.index)
+```
+Obtem-se o seguinte gráfico:
 ![image](https://github.com/Kelsonhenrique7/movie-project/assets/141082201/c6242cd3-51b6-4fa9-abe5-a844ff084641)
 
 
