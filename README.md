@@ -1,7 +1,7 @@
 # Projeto Movie
 Projeto desenvolvido para aprendizado de Exploração de Dados com Python utilizando a biblioteca Pandas para analisar dados sobre avaliação de filmes a partir da base de dados do Kaggle
 
-## 
+## Habilidades Desenvolvidas
 A partir da base de dados extraída do <a href="https://grouplens.org/datasets/movielens/" target="_blank"> Movie Lens</a>, as informações foram agrupadas. Dessa forma, foi criado um objeto do tipo DataFrame no Pandas. Isso permitiu o cálculo da média de variáveis importantes para o estudo.
 ![image](https://github.com/KelsonHenrique/movie-project/assets/141082201/bc612476-5a57-4ae7-a3b9-5bc2a40f0842)
 
