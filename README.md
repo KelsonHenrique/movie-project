@@ -10,11 +10,16 @@ Gráfico elaborado usando a biblioteca do python usando uma base de dados de
 ## Como executar esse projeto 
 
 - Instale Python versão 3.10.7;
-- Instale o Anaconda para obter o jupyter notebook na sua máquina, além de contar com muitas bibliotecas relevantes;
-- Execute o comando abaixo no diretório do arquivo:
+- Instale o Anaconda para obter o jupyter notebook na sua máquina;
+- Essa instalação permite que você obtenha muitas bibliotecas relevantes para executar seu projeto;
+- Escolha, dentro do prompt de comando, o diretório onde irá realizar o seu projeto
+- Após a escolha do diretório, execute o comando a seguir para iniciar os trabalhos:
 ```
-codigo aqui
+jupyter notebook
 ```
+- Uma página do seu navegador será aberta, exibindo todas as pastas do diretório escolhido no comando anterior;
+- A partir daí, selecione "New > Python 3 (ipykernel)". Então, a interface do jupyter abrirá para você iniciar a syntax.
+ 
   
 
 
